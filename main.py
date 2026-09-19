@@ -10,7 +10,6 @@ from app.api.routes import router as api_router
 async def lifespan(app: FastAPI):
     await init_db()
     yield
-
 app = FastAPI(
     title=settings.PROJECT_NAME,
     version="1.0.0",
